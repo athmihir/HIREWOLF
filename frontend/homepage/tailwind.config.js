@@ -18,6 +18,17 @@ module.exports = {
       },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in both',
+      },
+      spacing:{
+        navh : '9vh',
+        body: '91vh',
+        qtitle:'18.2vh',
+        navbtn: '5vh',
+        codepen:'54vw'
+      },
+      fontFamily: {
+        'josefin': ['Josefin Sans'],
+        'poppin': ['Poppins']
       }
     },
   },

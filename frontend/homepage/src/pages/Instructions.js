@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import HireWolf from '../img/wolfie.svg'
 
 function Instructions() {
@@ -9,6 +10,11 @@ function Instructions() {
     const [tagline, setTagline] = useState('');
 	const [subTagline, setSubtagline] = useState('');
 	const [signedin, setSignin] = useState(false);
+    const history = useHistory()
+
+    const beginTest = () => {
+        history.push("/test")
+    }
 
 	return (
 		<div className="flex flex-row">
@@ -18,7 +24,7 @@ function Instructions() {
 					<img src={ HireWolf } alt="HireWolf Logo" />
 					<h1 className="text-6xl my-auto pl-3.5 text-logolet">HIREWOLF</h1>
 				</div>
-				<div className="w-4/5 mx-auto pt-8 animate-fadeIn">
+				<div className="w-4/5 mx-auto pt-8 animate-fadeIn font-poppin">
 					<div className="my-auto"> {/* tagline div */}
 						<h3 className="text-4xl py-8 font-black pl-16 text-logolet">Goldman Sachs Internship Drive 2021</h3>
 					</div>
@@ -31,7 +37,7 @@ function Instructions() {
 
             {/* right container */}
             <div className="flex flex-col justify-center w-2/5 items-center">
-		 		<div className="w-4/5">
+		 		<div className="w-4/5 font-poppin">
 		 			<h4 className="font-semibold text-3xl py-8 animate-fadeIn">Instructions</h4>
 		 			<p className="py-3 animate-fadeIn">
 		 				The duration of this test is <span className="font-semibold">120 minutes</span>.
@@ -42,7 +48,7 @@ function Instructions() {
 		 			<p className="py-3 pb-8 animate-fadeIn">
 		 				Each question has <span className="font-semibold">10</span> points.
 		 			</p>
-		 			<button className="px-10 py-3 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline animate-fadeIn">
+		 			<button onClick={beginTest} className="px-10 py-3 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded inline animate-fadeIn">
 		 				Start Test
 		 			</button>
 		 		</div>

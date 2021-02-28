@@ -6,9 +6,9 @@ h1 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-h3, p, button, h4 {
+/* h3, p, button, h4 {
   font-family: 'Poppins', sans-serif !important;
-}
+} */
 
 .google-login-hook {
   width: 120%;
@@ -16,6 +16,7 @@ h3, p, button, h4 {
   align-items: center;
   text-align: center;
   background-color: #0F172A !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .google-login-hook div {

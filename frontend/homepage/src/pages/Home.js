@@ -24,7 +24,7 @@ function Home() {
 					<img src={ HireWolf } alt="HireWolf Logo" />
 					<h1 className="text-6xl my-auto pl-3.5 text-logolet">HIREWOLF</h1>
 				</div>
-				<div className="w-4/5 mx-auto pt-8 animate-fadeIn">
+				<div className="w-4/5 mx-auto pt-8 animate-fadeIn font-poppin">
 					<div className="my-auto"> {/* tagline div */}
 						<h3 className="text-4xl py-8 font-black pl-16 text-logolet">Relevant tests for relevant jobs.</h3>
 					</div>
@@ -38,7 +38,7 @@ function Home() {
             {/* right container */}
             <div className="flex flex-col justify-center w-2/5 items-center animate-fadeIn">
 				<div className="flex flex-col justify-center w-full items-center">
-					<div className="flex flex-col justify-center items-center w-4/5">
+					<div className="flex flex-col justify-center items-center w-4/5 font-poppin">
 						<h3 className="text-center text-2xl pb-10">Sign in to your account</h3>
 						<div className="mb-3 pt-0 w-full">
 							<input type="text" placeholder="Username" className="px-5 py-4 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-lg shadow outline-none focus:outline-none focus:ring focus:border-blue-300 w-full"/>

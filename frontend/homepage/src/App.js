@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
 import Home from './pages/Home'
 import Instructions from './pages/Instructions'
+import Test from './pages/Test'
 import './App.css'
 
 function App() {
@@ -19,8 +20,14 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path="/instructions/:testID" children={<Instructions />}>
-					
+				<Route 
+					path="/instructions/:testID" 
+					children={<Instructions />}>
+				</Route>
+				<Route 
+					path="/test" 
+				>
+					<Test />
 				</Route>
 				<Route path="/">
 					<Home />
