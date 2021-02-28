@@ -1,8 +1,6 @@
 import React from 'react';
 
 import './index.css';
-import cright from './img/chevron-right.svg'
-import cleft from './img/chevron-left.svg'
 import odefault from './img/output-default.svg'
 import ccircle from './img/check-circle.svg'
 
@@ -61,8 +59,14 @@ class Question extends React.Component {
                         
                     </div>
                     <div className="mb-6 flex w-auto h-1/4 justify-center">
-                        <input type="image" onClick={this.handleprev} className="flex h-5/6" src={cleft} alt="left nav"/>
-                        <input type="image" onClick={this.handlenext} className="flex h-5/6" src={cright} alt="right nav"/>
+                        
+                        <svg onClick={this.handleprev} className="flex h-5/6 text-gray-600 hover:text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        <svg onClick={this.handlenext} className="flex h-5/6 text-gray-600 hover:text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        
                     </div>
                 </div>
 
@@ -76,7 +80,7 @@ class Question extends React.Component {
                 </div>
 
                 <div className=" mt-8 mb-8 flex w-full h-auto">
-                  <button onClick={this.handlesubmit} className="ml-5 rounded-sm font-poppin text-logolet text-md bg-darkblue px-6 py-3">Submit</button>
+                  <button onClick={this.handlesubmit} className="ml-5 rounded-sm font-poppin text-logolet text-md bg-darkblue px-6 py-3  hover:bg-gray-900">Submit</button>
                 </div>
                 
             </div>

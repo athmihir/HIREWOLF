@@ -8,7 +8,7 @@ module.exports = {
         lightblue: '#C7D2FE',
         sidebar: '#F4F4F5',
         logolet: '#FAFAFA',
-        blueGray:'#1E293B'
+        blueGray:'#1E293B',
       },
       spacing:{
         navh : '9vh',
