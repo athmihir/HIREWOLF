@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home'
 import Instructions from './pages/Instructions'
 import Test from './pages/Test'
+import Training from './pages/Training'
 import './App.css'
 
 function App() {
@@ -24,10 +25,13 @@ function App() {
 					path="/instructions/:testID" 
 					children={<Instructions />}>
 				</Route>
-				<Route 
-					path="/test" 
-				>
+				<Route
+					path="/test">
 					<Test />
+				</Route>
+				<Route
+					path="/training/frontend/react">
+					<Training />
 				</Route>
 				<Route path="/">
 					<Home />
