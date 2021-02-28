@@ -21,7 +21,14 @@ function App() {
       </header>
       <div className="flex h-body w-full">
         <Question></Question>
-        <div className="flex h-full w-codepen bg-blueGray">
+        <div className="flex h-full w-full bg-blueGray">
+		<iframe src="https://codesandbox.io/embed/serene-gagarin-odlvu?fontsize=14&hidenavigation=1&theme=dark"
+		className="h-body w-full overflow-hidden"
+     title="serene-gagarin-odlvu"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+		
         </div>
       </div>
       

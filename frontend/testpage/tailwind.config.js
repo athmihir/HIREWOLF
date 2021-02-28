@@ -13,11 +13,13 @@ module.exports = {
       spacing:{
         navh : '9vh',
         body: '91vh',
+        qtitle:'18.2vh',
         navbtn: '5vh',
         codepen:'54vw'
       },
       fontFamily: {
-        'josefin': ['Josefin Sans']
+        'josefin': ['Josefin Sans'],
+        'poppin': ['Poppins']
       }
     }
   },
