@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Card = () => {
+const Card = (props) => {
 	return (
 		<article class='shadow-md p-5 '>
 			<div class='self-center col-span-3'>
 				<h2 class='text-gray-800 capitalize text-xl font-bold'>
-					hypnotherapy for motivation getting the drive back
+					{props.individualTitle}
 				</h2>
 			</div>
 			<div class='float-right'>

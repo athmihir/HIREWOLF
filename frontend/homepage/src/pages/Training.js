@@ -1,8 +1,22 @@
 import '../index.css';
 import HireWolf from '../img/wolfie.svg';
 import Card from '../components/Card';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 function Training() {
+
+	const [stringArray, setStringArray] = useState([]);
+
+	useEffect(() => {
+		axios.get(`http://127.0.0.1:4000/user/train-questions`)
+		.then(function (response) {
+			// console.log(response.data);
+			setStringArray(response.data);
+			console.log(stringArray);
+		})
+  	}, []);
+
 	return (
 		<div className='App w-screen h-screen'>
 			<header className='pr-4 flex w-full h-navh flex bg-darkblue'>
@@ -23,13 +37,16 @@ function Training() {
 				</div>
 			</div>
 
-			<div className='container mx-auto my-4 justify-center grid grid-cols-3 gap-4 '>
+			<div className='container mx-auto my-4 justify-center grid grid-cols-3 gap-4 w-screen'>
 				<div className='grid grid-cols-1 gap-4 col-span-2'>
-					<Card />
-					<Card />
-					<Card />
-					<Card />
-					<Card />
+					{stringArray.map(individualTitle => {
+						return (
+							<Card 
+							individualTitle={individualTitle}
+						/>
+						)						
+						
+					})}
 				</div>
 
 				<div className='grid grid-cols-1 p-4'>

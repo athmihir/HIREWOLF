@@ -3,7 +3,8 @@ import React from 'react';
 import '../index.css';
 import odefault from '../img/output-default.svg'
 import ccircle from '../img/check-circle.svg'
-
+import HTMLCSS from './assets/html-css.png'
+import HTMLCSSSTARRY from './assets/html-css-starry-nights.png'
 
 class Question extends React.Component {
     
@@ -38,7 +39,6 @@ class Question extends React.Component {
       }
 
     render() {
-
       return (
             <div className="flex flex-col h-full w-1/4 bg-sidebar overflow-x-hidden overflow-y-scroll">
 
@@ -71,7 +71,8 @@ class Question extends React.Component {
 
                 <div className="flex flex-col w-full h-auto">
                   <span className="pl-5 pt-6 flex text-3xl text-gray-900 font-poppin font-semibold">Output</span>
-                  <img className= "mt-8 px-16" src={ odefault } alt="Output"/>
+                  {this.state.current === 0 && <img className= "mt-8 px-16" src={HTMLCSS} alt="Output"/>}
+                  {this.state.current === 1 && <img className= "mt-8 px-16" src={HTMLCSSSTARRY} alt="Output"/>}
                 </div>
 
                 <div className=" mt-8 mb-8 flex w-full h-auto">

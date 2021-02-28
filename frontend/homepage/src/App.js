@@ -33,6 +33,10 @@ function App() {
 					path="/training/frontend/react">
 					<Training />
 				</Route>
+				<Route
+					path="/assets/html-css.png">
+					<Training />
+				</Route>
 				<Route path="/">
 					<Home />
 				</Route>
