@@ -4,29 +4,24 @@ import './index.css';
 import odefault from './img/output-default.svg'
 import ccircle from './img/check-circle.svg'
 
-const state = {current:0 ,
-  questions:[{title:'Angular Jaws', question:"Fix the error in the Angular JS code given in the Codepen.<br> Center the main div with respect to its parent.<br>Add a congruent color scheme to the UI.", completed:'none'
-}, {title:'React to It', question:"Fix the error in the React JS code given in the Codepen below.<br> Create a new react component using function class.<br>Store the states for each variable properly.",completed:'none'
-}
-]};
 
 class Question extends React.Component {
     
-    constructor() {
+    constructor(props) {
         super();
-        this.state = state;
+        this.state = props.content;
       }
 
       handlenext = (e) => {
         if(this.state.current < this.state.questions.length - 1){
-          console.log('clicked');
+          this.props.update(this.state.current + 1);
           this.setState({current:this.state.current + 1});
         }
       }
 
       handleprev = (e) => {
         if(this.state.current > 0){
-          console.log('clicked');
+          this.props.update(this.state.current - 1);
           this.setState({current:this.state.current - 1});
         }
       }
