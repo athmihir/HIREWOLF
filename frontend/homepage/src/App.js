@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import GoogleLogin from 'react-google-login'
 import './App.css'
 import HireWolf from './img/wolfie.svg'
 
 function App() {
+
+	const [tagline, setTagline] = useState('Relevant tests for relevant jobs.');
+	const [subTagline, setSubtagline] = useState('Our tests are designed to be domain-specific, which means no more spending weeks on algorithmic interviews.');
 
 	const responseGoogle = (response) => {
 		console.log(response);
@@ -12,17 +16,17 @@ function App() {
 	return (
 		<div className="App flex flex-row">
 			{/* left container */}
-			<div className="w-3/5 bg-gray-800 h-screen flex flex-col justify-center">
+			<div className="w-3/5 bg-gray-900 h-screen flex flex-col justify-center">
 				<div className="flex flex-row justify-center"> {/* logo div */}
 					<img src={ HireWolf } alt="HireWolf Logo" />
 					<h1 className="text-6xl my-auto pl-3.5 text-logolet">HIREWOLF</h1>
 				</div>
 				<div className="w-4/5 mx-auto pt-8">
 					<div className="my-auto"> {/* tagline div */}
-						<h3 className="text-4xl py-8 font-black pl-16 text-logolet">Relevant tests for relevant jobs.</h3>
+						<h3 className="text-4xl py-8 font-black pl-16 text-logolet">{tagline}</h3>
 					</div>
 					<div> {/* sub-tagline div */}
-						<p className="mr-auto w-3/5 pl-16 text-sidebar">Our tests are designed to be domain-specific, which means no more spending weeks on algorithmic interviews.</p>
+						<p className="mr-auto w-3/5 pl-16 text-sidebar">{subTagline}</p>
 					</div>
 				</div>
 				
@@ -44,7 +48,7 @@ function App() {
 						</button>
 						<a href="#" className="inline ml-auto text-sm text-blue-500 hover:underline">Forgot password?</a>
 					</div>
-					<div className="pt-8">
+					<div className="pt-8 flex flex-col justify-center items-center">
 						<p className="text-lg font-medium text-center pb-8">or</p>
 						<GoogleLogin 
 							clientId="861307263368-7q3plnmvq37aolnnvqu9gpiojf8c9r6f.apps.googleusercontent.com"
