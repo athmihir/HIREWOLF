@@ -1,6 +1,6 @@
 # HIREWOLF
 
-##Idea
+## Idea
 This was our Project for UTD-Hacks-VII 2021. A little background behind the idea, we as students spend months practicing algorithmic-style coding tests to land our dream job.
 However, there remains a massive disconnect between these tests and the actual job. So our group of friends sat together and brainstormed solutions for this problem.
 And what we came up with was something that would benefit both recruiters and candidates.
@@ -15,7 +15,7 @@ Our questions are set by experts and professionals and test your real-knowledge 
 
 We built the App using React, Nodejs, and Codesandbox.io.
 
-# Future Scope
+## Future Scope
 
 We intend to allow candidates to practice various questions to hone their skills and perform better in their jobs.
 We also will have challenges which various companies can post or real-world problems that they are facing.
