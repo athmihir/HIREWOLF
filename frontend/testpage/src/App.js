@@ -1,6 +1,7 @@
 import './index.css';
 import hirewolf from './img/wolfie.svg'
 import Question from './question'
+import Timer from './timer'
 
 function App() {
   return (
@@ -10,18 +11,16 @@ function App() {
 			<img className="ml-8 h-2/3 " src={hirewolf} alt="logo"/>
 			<div className="ml-1 text-xl text-logolet font-josefin">HIREWOLF</div>
 		</div>
-		<div className="flex justify-end items-center w-1/2 h-full">
-			<div className="ml-2 rounded-full flex-none bg-lightblue h-navbtn w-navbtn">
-			</div>
-			<div className="ml-2 rounded-full flex-none bg-lightblue h-navbtn w-navbtn">
-			</div>
-			<div className="mr-8 ml-2 rounded-full flex-none bg-lightblue h-navbtn w-navbtn">
-			</div>
+		<Timer></Timer>
+		<div className="font-poppin flex justify-end items-center w-1/6 h-full">
+			<button className="mr-4 rounded-sm font-semibold font-poppin text-logolet text-base bg-green-600 px-4 py-2 hover:bg-green-800 hover:text-gray-300">Submit Test</button>
 		</div>
+			
       </header>
       <div className="flex h-body w-full">
         <Question></Question>
         <div className="flex h-full w-full bg-blueGray">
+		
 		<iframe src="https://codesandbox.io/embed/serene-gagarin-odlvu?fontsize=14&hidenavigation=1&theme=dark"
 		className="h-body w-full overflow-hidden"
      title="serene-gagarin-odlvu"
