@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #9ca3af #f4f4f5;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #f4f4f5;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #9ca3af;
+	border-radius: 99999px;
+	border-right: 3px #f4f4f5 solid;
+}
